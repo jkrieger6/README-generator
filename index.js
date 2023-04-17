@@ -62,17 +62,15 @@ const fs = require('fs');
 
 
 // TODO: Create a function to write README file
-    const {projectTitle, description, installation, usage, credit, contribution, license, roadMap} = data;
-
 function writeToFile(fileName, data) {
-    const readmeContent = `# ${projectTitle}\n\n` + 
-    `## Descriptionn\n\n${description}\n\n` +
-    `## Installation\n\n${installation}\n\n` +
-    `## Usage\n\n${usage}\n\n` +
-    `## Credit\n\n${credit}\n\n` +
-    `## Contributors\n\n${contribution}\n\n` +
+    const readmeContent = `# ${data.projectTitle}\n\n` + 
+    `## Descriptionn\n\n${data.description}\n\n` +
+    `## Installation\n\n${data.installation}\n\n` +
+    `## Usage\n\n${data.usage}\n\n` +
+    `## Credit\n\n${datacredit}\n\n` +
+    `## Contributors\n\n${data.contribution}\n\n` +
     `## License\n\nThis project is licensed under the ${license} license.\n\n` +
-    `## Roadmap\n\n${roadMap}\n`;
+    `## Roadmap\n\n${data.roadMap}\n`;
 
     fs.writeFile (fileName, readmeContent, (err) => {
         if(err) {
