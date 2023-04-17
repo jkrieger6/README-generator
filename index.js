@@ -84,7 +84,20 @@ function writeToFile(fileName, data) {
 };
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    if(process.argv[2]) {
+        const projectTitle = process.argv[2];
+        writeToFile('README.md', {projectTitle});
+    } else {
+        inquirer.prompt(questions)
+        .then((answers) => {
+            writeToFile('README.md', answers);
+        })
+        .catch((err) => {
+            console.log(err);
+        });
+    }
+};
 
 // Function call to initialize app
 init();
