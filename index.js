@@ -3,17 +3,7 @@ const inquirer = require('inquirer');
 const fs = require('fs'); 
 
 // TODO: Create an array of questions for user input
- const questions = {
-    // title: "What is the Title of your application?",
-    // describe: "How would you describe the functionality of the application?",
-    // install: "What are the steps required to install your app?",
-    // usage: "How are user going to use this app?",
-    // credit: "Is there anyone else who helped on this project?",
-    // howTo: "If anyone wants to contribute, how can they reach you?",
-    // roadMap: "Do you have any plans for the future of this application?"
-
-
-inquirer.prompt([
+ const questions = [
   {
     type: "input",
     name: "projectTitle",
@@ -68,7 +58,7 @@ inquirer.prompt([
     name: "roadMap",
     message: "Any future plans for the project?"
   }
-])
+];
 .then((answers) => {
     fs.renderFile('README.md', answers, (err, str) => {
         if(err) {
