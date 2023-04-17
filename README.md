@@ -31,7 +31,7 @@ WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 ```
 ## Visuals
-
+For a walk-through on how to use this program, please watch the following video:
 ## Installation
 * Node version 16 inquierer package 8.2.4
 * Made using the latest versions of Visual Studio Code
