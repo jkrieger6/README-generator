@@ -59,34 +59,25 @@ const fs = require('fs');
     message: "Any future plans for the project?"
   }
 ];
+
+inquirer.prompt(questions)
 .then((answers) => {
-    fs.renderFile('README.md', answers, (err, str) => {
-        if(err) {
-            console.log(err);
-        } else {
-            fs.writeFile('README.md', str, (err) => {
-                if(err) {
-                    console.log(err);
-                } else {
-                    console.log('README.md File has been created successfully');
-                }
-            });
-        }
-    });
+    writeToFile("README.md", answers);
 })
 .catch((err) => {
     console.log(err);
-});
+})
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
+function writeToFile(fileName, answers) {
     const readmeContent = `# ${answers.projectTitle}\n\n` + 
     `## Descriptionn\n\n${answers.description}\n\n` +
     `## Installation\n\n${answers.installation}\n\n` +
     `## Usage\n\n${answers.usage}\n\n` +
     `## Credit\n\n${answers.credit}\n\n` +
     `## Contributors\n\n${answers.contribution}\n\n` +
-    `## License\n\nThis project is licensed under the ${answers.license} license.\n`
+    `## License\n\nThis project is licensed under the ${answers.license} license.\n`;
+    
 }
 
 // TODO: Create a function to initialize app
