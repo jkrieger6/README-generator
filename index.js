@@ -16,7 +16,7 @@ const fs = require('fs');
   },
   {
     type: "input",
-    name: "installaltion",
+    name: "installation",
     message: "Enter installation instructions"
   },
   {
@@ -67,9 +67,9 @@ function writeToFile(fileName, data) {
     `## Descriptionn\n\n${data.description}\n\n` +
     `## Installation\n\n${data.installation}\n\n` +
     `## Usage\n\n${data.usage}\n\n` +
-    `## Credit\n\n${datacredit}\n\n` +
+    `## Credit\n\n${data.credit}\n\n` +
     `## Contributors\n\n${data.contribution}\n\n` +
-    `## License\n\nThis project is licensed under the ${license} license.\n\n` +
+    `## License\n\nThis project is licensed under the ${data.license} license.\n\n` +
     `## Roadmap\n\n${data.roadMap}\n`;
 
     fs.writeFile (fileName, readmeContent, (err) => {
