@@ -4,14 +4,14 @@ const fs = require('fs');
 
 // TODO: Create an array of questions for user input
  const questions = {
-    title: "What is the Title of your application?",
-    describe: "How would you describe the functionality of the application?",
-    install: "What are the steps required to install your app?",
-    usage: "How are user going to use this app?",
-    credit: "Is there anyone else who helped on this project?",
-    howTo: "If anyone wants to contribute, how can they reach you?",
-    roadMap: "Do you have any plans for the future of this application?"
-};
+    // title: "What is the Title of your application?",
+    // describe: "How would you describe the functionality of the application?",
+    // install: "What are the steps required to install your app?",
+    // usage: "How are user going to use this app?",
+    // credit: "Is there anyone else who helped on this project?",
+    // howTo: "If anyone wants to contribute, how can they reach you?",
+    // roadMap: "Do you have any plans for the future of this application?"
+
 
 inquirer.prompt([
   {
@@ -89,7 +89,15 @@ inquirer.prompt([
 });
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    const readmeContent = `# ${answers.projectTitle}\n\n` + 
+    `## Descriptionn\n\n${answers.description}\n\n` +
+    `## Installation\n\n${answers.installation}\n\n` +
+    `## Usage\n\n${answers.usage}\n\n` +
+    `## Credit\n\n${answers.credit}\n\n` +
+    `## Contributors\n\n${answers.contribution}\n\n` +
+    `## License\n\nThis project is licensed under the ${answers.license} license.\n`
+}
 
 // TODO: Create a function to initialize app
 function init() {}
