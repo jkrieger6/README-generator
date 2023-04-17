@@ -1,7 +1,11 @@
 # README-generator
 Using the terminal this application will take the users input through a series of questions and on completion of the questions a markdown README file will be generated
 ## Project Description
-
+A user who wants to create a markdown file README will be able to do so from the terminal in turn being abke to devote more time to the project. The user can open their terminal and with the proper version of Node.js can genereate a professional README by invoking the program with the following command:
+```md
+node index.js
+```
+Once the user has input all of their answers, they will then be generated a professional README.md file.
 ## User Story
 ```md
 As a developer
@@ -37,8 +41,10 @@ THEN I am taken to the corresponding section of the README
 * For support the best form of contact will be by email at jkrieger11@gmail.com .
 
 ## Roadmap
-
+* There are currently no future plans for this application. 
 ## Authors and acknowledgment
+* Jake Krieger
+[GitHub](https://github.com/jkrieger6?tab=repositories "GitHub Repos")
 
 ## Usage
 
