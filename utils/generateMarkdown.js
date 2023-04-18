@@ -70,7 +70,6 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   return `
-  ## License This project is licensed under the ${license} license.
   ${renderLicenseLink(license)} 
   ${renderLicenseBadge(license)}
   `
@@ -81,6 +80,7 @@ function generateMarkdown(data) {
   return `# ${data.projectTitle}
   ## Description 
   ${data.description}
+  * Application is covered under the ${renderLicenseSection(data.license)}.
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
@@ -96,13 +96,15 @@ function generateMarkdown(data) {
   ${data.credit}
   ## Contributors
   ${data.contribution}
-  ${renderLicenseSection(data.license)}
+  ## License 
+  This project is licensed under the ${data.license} license.
   ## Roadmap 
   ${data.roadMap}
   ## Tests
   ${data.tests}
   ## Questions
-  If you have any questions, please contact me at ${data.concerns}.`;
+  If you have any questions, please contact me at ${data.concerns}.
+  * [GitHub](${data.github})`;
 }
 
 module.exports = generateMarkdown;
