@@ -1,5 +1,6 @@
-// TODO: Include packages needed for this application
+// Packages needed for this application
 const inquirer = require('inquirer');
+// fs is a Node standard library package for reading and writing files
 const fs = require('fs'); 
 
 // TODO: Create an array of questions for user input
@@ -64,7 +65,7 @@ const fs = require('fs');
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     const readmeContent = `# ${data.projectTitle}\n\n` + 
-    `## Descriptionn\n\n${data.description}\n\n` +
+    `## Description\n\n${data.description}\n\n` +
     `## Installation\n\n${data.installation}\n\n` +
     `## Usage\n\n${data.usage}\n\n` +
     `## Credit\n\n${data.credit}\n\n` +
@@ -76,7 +77,7 @@ function writeToFile(fileName, data) {
         if(err) {
             console.log(err);
         } else {
-            console.log('${fileName} has been created succesfully');
+            console.log(`${fileName} has been created succesfully`);
         }
     });
 };
