@@ -81,6 +81,13 @@ function generateMarkdown(data) {
   return `# ${data.projectTitle}
   ## Description 
   ${data.description}
+  ## Table of Contents
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Credit](#credit)
+  * [Contributors](#contributors)
+  * [License](#license)
+  * [Roadmap](#roadmap)
   ## Installation 
   ${data.installation}
   ## Usage 
