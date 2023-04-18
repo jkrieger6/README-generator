@@ -3,6 +3,7 @@ const inquirer = require('inquirer');
 // fs is a Node standard library package for reading and writing files
 const fs = require('fs'); 
 
+const generateMarkdown = require('./utils/generateMarkdown');
 // Array of questions for user input
  const questions = [
   {
@@ -60,20 +61,10 @@ const fs = require('fs');
     message: "Any future plans for the project?"
   }
 ];
-//  inquirer.prompt(questions).then(answers) => {
-//   const { projectTitle, description, installation, usage, credit, contribution, license, roadMap } = answers;
-//  }
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    const readmeTemplate = `# ${data.projectTitle}\n\n` + 
-    `## Description\n\n${data.description}\n\n` +
-    `## Installation\n\n${data.installation}\n\n` +
-    `## Usage\n\n${data.usage}\n\n` +
-    `## Credit\n\n${data.credit}\n\n` +
-    `## Contributors\n\n${data.contribution}\n\n` +
-    `## License\n\nThis project is licensed under the ${data.license} license.\n\n` +
-    `## Roadmap\n\n${data.roadMap}\n`;
+    const readmeTemplate = generateMarkdown(data);
 
     fs.writeFile (fileName, readmeTemplate, (err) => {
       err ? console.log(err) : console.log(`${fileName} has been created succesfully`);
