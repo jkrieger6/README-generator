@@ -1,0 +1,15 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "Using the terminal this application will take the users input through a series of questions and on completion of the questions a markdown README file will be generated ## Project Description A user who wants to create a markdown file README will be able to do so from the terminal in turn being abke to devote more time to the project. The user can open their terminal and with the proper version of Node.js can genereate a professional README by invoking the program with the following command: ```md node index.js ``` Once the user has input all of their answers, they will then be generated a professional README.md file. ## User Story ```md As a developer I want a README generator So that I can quickly create a professional README for a new project ``` ## Acceptance Criteria ```md GIVEN a command-line application that accepts user input WHEN I am prompted for information about my application repository THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions WHEN I enter my project title THEN this is displayed as the title of the README WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests WHEN I choose a license for my application from a list of options THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under WHEN I enter my GitHub username THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile WHEN I enter my email address THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions WHEN I click on the links in the Table of Contents THEN I am taken to the corresponding section of the README ``` ## Visuals For a walk-through on how to use this program, please watch the following video: ## Installation * Node version 16 inquierer package 8.2.4 * Made using the latest versions of Visual Studio Code * Made with the latest version of GitHub",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
