@@ -60,6 +60,11 @@ const generateMarkdown = require('./utils/generateMarkdown');
     type: "input",
     name: "roadMap",
     message: "Any future plans for the project?"
+  },
+  {
+    type: "input",
+    name: "test",
+    message: "Enter any test that you have done for the project"
   }
 ];
 
