@@ -69,7 +69,7 @@ const generateMarkdown = require('./utils/generateMarkdown');
   {
     type: "input",
     name: "concerns",
-    message: "Where can people go to ask questions about the project?"
+    message: "What is your email so people can ask questions about the project?"
   },
   {
     type: "input",
