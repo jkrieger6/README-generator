@@ -68,7 +68,7 @@ const generateMarkdown = require('./utils/generateMarkdown');
   },
   {
     type: "input",
-    name: "questions",
+    name: "concerns",
     message: "Where can people go to ask questions about the project?"
   }
 ];
