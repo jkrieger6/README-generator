@@ -37,6 +37,10 @@ For a walk-through on how to use this program, please watch the following video:
 * Made using the latest versions of Visual Studio Code
 * Made with the latest version of GitHub
 
+## License
+* This application is covered under the [MIT](https://choosealicense.com/licenses/mit/) license
+* [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## Support
 * For support the best form of contact will be by email at jkrieger11@gmail.com .
 
