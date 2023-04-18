@@ -98,7 +98,11 @@ function generateMarkdown(data) {
   ${data.contribution}
   ${renderLicenseSection(data.license)}
   ## Roadmap 
-  ${data.roadMap}`;
+  ${data.roadMap}
+  ## Tests
+  ${data.tests}
+  ## Questions
+  If you have any questions, please contact me at ${data.concerns}.`;
 }
 
 module.exports = generateMarkdown;
