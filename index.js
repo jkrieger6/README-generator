@@ -86,8 +86,7 @@ function init() {
         const projectTitle = process.argv[2];
         writeToFile('README.md', {projectTitle});
     } else {
-        inquirer.prompt(questions)
-        .then((answers) => {
+        inquirer.prompt(questions).then((answers) => {
             writeToFile('README.md', answers);
         })
         .catch((err) => {
