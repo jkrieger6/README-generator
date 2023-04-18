@@ -13,7 +13,7 @@ function renderLicenseBadge(license) {
     return "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)";
   } else if (license === "Boost Software License 1.0") {
     return "[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)";
-  } else if (license === "Creative Commons Zero v1.0 Universal") { 
+  } else if (license === "Creative Commons Zero v1.0 Universal") {
     return "[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)";
   } else if (license === "Eclipse Public License 2.0") {
     return "[![License](https://img.shields.io/badge/License-EPL_2.0-red.svg)](https://opensource.org/licenses/EPL-2.0)";
@@ -72,7 +72,7 @@ function renderLicenseSection(license) {
   return `
   ${renderLicenseLink(license)} 
   ${renderLicenseBadge(license)}
-  `
+  `;
 }
 
 // TODO: Create a function to generate markdown for README
