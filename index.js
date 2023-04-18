@@ -65,6 +65,11 @@ const generateMarkdown = require('./utils/generateMarkdown');
     type: "input",
     name: "test",
     message: "Enter any test that you have done for the project"
+  },
+  {
+    type: "input",
+    name: "questions",
+    message: "Where can people go to ask questions about the project?"
   }
 ];
 
