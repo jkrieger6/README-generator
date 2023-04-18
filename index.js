@@ -18,6 +18,11 @@ const generateMarkdown = require('./utils/generateMarkdown');
   },
   {
     type: "input",
+    name: "tableOfContents",
+    message: "Enter a table of contents"
+  },
+  {
+    type: "input",
     name: "installation",
     message: "Enter installation instructions"
   },
