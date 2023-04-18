@@ -88,6 +88,8 @@ function generateMarkdown(data) {
   * [Contributors](#contributors)
   * [License](#license)
   * [Roadmap](#roadmap)
+  * [Tests](#tests)
+  * [Questions](#questions)
   ## Installation 
   ${data.installation}
   ## Usage 
