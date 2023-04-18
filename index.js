@@ -13,7 +13,7 @@ const fs = require('fs');
   {
     type: "input",
     name: "description",
-    message: "Enter a project desscription"
+    message: "Enter a project description"
   },
   {
     type: "input",
