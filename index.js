@@ -52,7 +52,8 @@ const generateMarkdown = require('./utils/generateMarkdown');
       "GNU General Public License v2.0",
       "GNU Lesser General Public License v2.1",
       "Mozilla Public License 2.0",
-      "The Unlicense"
+      "The Unlicense",
+      "None"
     ]
   },
   {
