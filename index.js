@@ -70,6 +70,11 @@ const generateMarkdown = require('./utils/generateMarkdown');
     type: "input",
     name: "concerns",
     message: "Where can people go to ask questions about the project?"
+  },
+  {
+    type: "input",
+    name: "github",
+    message: "Enter your GitHub Username:"
   }
 ];
 
