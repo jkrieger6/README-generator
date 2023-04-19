@@ -32,6 +32,14 @@ git clone https://github.com/jkrieger6/README-generator.git
 * This application is covered under the [MIT](https://choosealicense.com/licenses/mit/) license
 * [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+## Contributing
+1. Fork the repository and clone it to your local machine.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them to your branch.
+4. Push your changes to your forked repository.
+5. Open a pull request to the original repository, and describe your changes and why they are necessary.
+
+
 ## Support
 * For support, the best form of contact will be by email at jkrieger11@gmail.com .
 
