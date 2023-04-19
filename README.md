@@ -12,6 +12,7 @@ So that I can quickly create a professional README for a new project
 ```
 ## Visuals
 For a walk-through on how to use this program, or if you want to see it work before using it, please watch the following video:
+https://drive.google.com/file/d/1TRCWR8B2hr7BFr1xVju80zw_AtuHykG6/view
 
 ## Installation
 * Node version 16 inquierer package 8.2.4
