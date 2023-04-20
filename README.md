@@ -50,7 +50,7 @@ git clone https://github.com/jkrieger6/README-generator.git
 [GitHub](https://github.com/jkrieger6?tab=repositories "GitHub Repos")
 
 ## Usage
-* Start program by running
+* Start program to generate README.md by running
 ```
 node index.js
 ```
