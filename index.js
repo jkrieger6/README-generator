@@ -2,6 +2,7 @@
 const inquirer = require("inquirer");
 // fs is a Node standard library package for reading and writing files
 const fs = require("fs");
+const path = require("path");
 
 const generateMarkdown = require("./utils/generateMarkdown");
 // Array of questions for user input
@@ -92,14 +93,19 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
+  const outPutDirectory = path.join(process.cwd(), "output");
+  if (!fs.existsSync(outPutDirectory)) {
+    fs.mkdirSync(outPutDirectory);
+  }
+  const outputPath = path.join(outPutDirectory, "README.md");
   if (process.argv[2]) {
     const projectTitle = process.argv[2];
-    writeToFile("README.md", { projectTitle });
+    writeToFile(outputPath, { projectTitle });
   } else {
     inquirer
       .prompt(questions)
       .then((answers) => {
-        writeToFile("README.md", answers);
+        writeToFile(outputPath, answers);
       })
       .catch((err) => {
         console.log(err);
